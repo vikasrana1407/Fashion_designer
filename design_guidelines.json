@@ -1,0 +1,178 @@
+{
+  "project_name": "AI Fashion Design Studio",
+  "theme_and_archetype": {
+    "theme": "DARK",
+    "archetype": "Archetype 5: Jewel & Luxury combined with Archetype 4: Editorial High-Contrast",
+    "vibe": "Cinematic, expensive, moody, avant-garde, stark contrast, high-fashion editorial."
+  },
+  "typography": {
+    "rules": {
+      "anti_default": "Avoid Inter, Roboto, Open Sans. Use tight letter spacing for headings.",
+      "hierarchy": "H1 max text-6xl, H2 text-4xl. Strong contrast between Display serif headers and geometric sans body."
+    },
+    "fonts": {
+      "headings": {
+        "family": "Cormorant Garamond, Playfair Display",
+        "weight": "font-light to font-normal",
+        "tracking": "tracking-tighter",
+        "usage": "Hero sections, project titles, gallery headers."
+      },
+      "body": {
+        "family": "Outfit, General Sans, Satoshi",
+        "weight": "font-light",
+        "tracking": "tracking-normal",
+        "usage": "Dashboard data, UI controls, prompts, body text."
+      },
+      "accent_labels": {
+        "family": "Outfit, JetBrains Mono",
+        "transform": "uppercase",
+        "tracking": "tracking-[0.2em]",
+        "size": "text-xs",
+        "usage": "Overlines, metadata, small UI labels."
+      }
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#0A0A0C",
+      "surface": "#121215",
+      "surface_elevated": "#1A1A1E"
+    },
+    "text": {
+      "primary": "#F4F4F5",
+      "secondary": "#A1A1AA",
+      "muted": "#71717A"
+    },
+    "accents": {
+      "primary": "#E5E5E5",
+      "primary_hover": "#FFFFFF",
+      "highlight": "#D4AF37",
+      "danger": "#7F1D1D"
+    },
+    "borders": {
+      "default": "rgba(255, 255, 255, 0.1)",
+      "focus": "rgba(255, 255, 255, 0.3)"
+    },
+    "rules": {
+      "tinted_grey": "All backgrounds are tinted with a cool midnight blue/slate hue. No pure #000000.",
+      "contrast": "Text over images MUST have gradient overlays (bg-gradient-to-t from-black/80 to-transparent)."
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing. Use p-8 to p-16 for containers to give fashion imagery room to breathe.",
+    "grids": {
+      "marketing": "Tetris Grid (asymmetrical, overlapping) for the landing page.",
+      "workspace": "Control Room Grid (dense, rigid, panel-based) for the AI Generation Studio.",
+      "gallery": "Masonry or Bento Grid with 1px border-white/10 between items."
+    },
+    "corners": {
+      "radius": "rounded-none",
+      "explanation": "Sharp edges (0px radius) reinforce the Brutalist/High-Fashion editorial aesthetic."
+    }
+  },
+  "surface_strategies": {
+    "header": {
+      "style": "Crystal Glassmorphism",
+      "classes": "bg-[#0A0A0C]/70 backdrop-blur-xl border-b border-white/10"
+    },
+    "workspace_panels": {
+      "style": "Grid Borders",
+      "classes": "bg-transparent border border-white/10",
+      "shadow": "none"
+    },
+    "floating_menus": {
+      "style": "Neumorphic / Solid",
+      "classes": "bg-[#121215] border border-white/15 shadow-2xl shadow-black/50"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-white text-black hover:bg-gray-200 rounded-none px-6 py-3 font-medium uppercase tracking-widest text-xs transition-colors",
+      "secondary": "bg-transparent text-white border border-white/20 hover:border-white/60 rounded-none px-6 py-3 font-medium uppercase tracking-widest text-xs transition-colors",
+      "icon": "bg-transparent hover:bg-white/5 border border-transparent hover:border-white/10"
+    },
+    "inputs": {
+      "style": "bg-transparent border-b border-white/20 hover:border-white/50 focus:border-white rounded-none px-0 py-2 text-white placeholder:text-white/30 transition-colors focus:ring-0 focus:outline-none"
+    },
+    "cards": {
+      "style": "bg-transparent border border-white/10 group cursor-pointer overflow-hidden",
+      "hover": "hover:border-white/30 transition-all duration-500",
+      "image_treatment": "grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]",
+    "hover_effects": "Images scale up slowly. Borders fade from 10% to 40% opacity. Text transforms slightly.",
+    "page_load": "Staggered fade-up for gallery items."
+  },
+  "media": {
+    "rules": "Never use placeholder text or dummy image URLs. Only use the provided Unsplash/Pexels URLs below.",
+    "image_urls": {
+      "hero_backgrounds": [
+        {
+          "url": "https://images.unsplash.com/photo-1762504013915-c1faf57f291b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwyfHxoaWdoJTIwZmFzaGlvbiUyMGVkaXRvcmlhbCUyMHBvcnRyYWl0JTIwZGFya3xlbnwwfHx8fDE3Nzg0NzY3NTV8MA&ixlib=rb-4.1.0&q=85",
+          "description": "Woman with veil over face against dark background",
+          "category": "hero_main"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1766299231533-27fb998d1a6e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwzfHxoaWdoJTIwZmFzaGlvbiUyMGVkaXRvcmlhbCUyMHBvcnRyYWl0JTIwZGFya3xlbnwwfHx8fDE3Nzg0NzY3NTV8MA&ixlib=rb-4.1.0&q=85",
+          "description": "Black and white portrait of a young woman",
+          "category": "hero_secondary"
+        }
+      ],
+      "fashion_concepts": [
+        {
+          "url": "https://images.unsplash.com/photo-1588011025378-15f4778d2558?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxzdHJlZXR3ZWFyJTIwamFja2V0JTIwYmxhY2t8ZW58MHx8fHwxNzc4NDc2NzcwfDA&ixlib=rb-4.1.0&q=85",
+          "description": "woman in black coat holding her chin",
+          "category": "generated_concept_1"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1771736825285-b46748f03a86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxzdHJlZXR3ZWFyJTIwamFja2V0JTIwYmxhY2t8ZW58MHx8fHwxNzc4NDc2NzcwfDA&ixlib=rb-4.1.0&q=85",
+          "description": "Young man in a leather jacket against blue sky",
+          "category": "generated_concept_2"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1775805043566-e43546873ede?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHxzdHJlZXR3ZWFyJTIwamFja2V0JTIwYmxhY2t8ZW58MHx8fHwxNzc4NDc2NzcwfDA&ixlib=rb-4.1.0&q=85",
+          "description": "Man in beanie and leather jacket stands by fence",
+          "category": "generated_concept_3"
+        }
+      ],
+      "materials_and_sketches": [
+        {
+          "url": "https://images.pexels.com/photos/2248589/pexels-photo-2248589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "description": "Crumpled gold fabric texture",
+          "category": "material_reference"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1758278212585-c050f6ee5742?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwZmFicmljJTIwZ29sZCUyMGJsYWNrfGVufDB8fHx8MTc3ODQ3Njc3MHww&ixlib=rb-4.1.0&q=85",
+          "description": "Black fabric with intricate floral embroidery",
+          "category": "material_reference"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1761746395622-5f7e0e7b4ec7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxmYXNoaW9uJTIwaWxsdXN0cmF0aW9uJTIwc2tldGNofGVufDB8fHx8MTc3ODQ3Njc3MHww&ixlib=rb-4.1.0&q=85",
+          "description": "Pencils and fashion sketches on a table",
+          "category": "sketch_reference"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1720031995243-dc267089f662?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxmYXNoaW9uJTIwaWxsdXN0cmF0aW9uJTIwc2tldGNofGVufDB8fHx8MTc3ODQ3Njc3MHww&ixlib=rb-4.1.0&q=85",
+          "description": "Elegant woman in a striped suit holding gloves and cigarette",
+          "category": "inspiration_board"
+        }
+      ]
+    }
+  },
+  "icons": {
+    "library": "@phosphor-icons/react",
+    "weight": "thin or light",
+    "instructions": "Use thin/light weight icons to match the delicate editorial typography."
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the dark theme and high-contrast editorial aesthetic. Do not use generic SaaS UI templates.",
+    "Use 'Cormorant Garamond' or 'Playfair Display' for large, impactful headings. Use 'Outfit' or 'Satoshi' for the dense UI.",
+    "Maintain 0px border-radius (sharp corners) on all UI elements (buttons, inputs, cards) for a brutalist high-fashion look.",
+    "The Workspace/Studio page must follow the 'Control Room' dense grid, while Galleries/Collections must use 'Bento/Masonry' grids with generous spacing.",
+    "Use purely HTML/Tailwind for marketing and gallery sections. Heavily customize Shadcn components for workspace controls, removing default radiuses and shadows.",
+    "Ensure all interactive elements have data-testid attributes for testing.",
+    "DO NOT use placeholder image services. Use ONLY the URLs provided in the media.image_urls array."
+  ]
+}
